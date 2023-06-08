@@ -24,7 +24,7 @@ class TotalLiteMenu {
         this.hide();
 
         // Append
-        this.container.appendChild(this.menu['root']);
+        this.container.append(this.menu['root']);
     }
 
     /**
@@ -55,7 +55,7 @@ class TotalLiteMenu {
                     if ('onClick' in args && args.onClick != null) args.onClick(event);
                 }
             });
-            this.menu[args.parent].appendChild(item);
+            this.menu[args.parent].append(item);
         }
     }
 
@@ -65,7 +65,7 @@ class TotalLiteMenu {
 
     addSeparator() {
         const sep = document.createElement('hr');
-        this.menu['root'].appendChild(sep);
+        this.menu['root'].append(sep);
     }
 
     /**

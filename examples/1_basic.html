@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Total Lite Menu Test</title>
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <script src="../litemenu.js"></script>
+        <link rel="stylesheet" href="../litemenu.css">
+        <style>
+            html, body {
+                width: 100%;
+                height: 100%;
+            }
+            body {
+                background-color: #bcc9d7;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>    
+    </head>
+    <body>
+        <div>Click right mouse button to show menu.</div>
+        <script>
+            window.onload = function() {
+                const menu = new TotalLiteMenu({container: window.document.body});
+                menu.addItem({
+                    parent: 'root',
+                    id: 'foo',
+                    name: '🔥 Foo',
+                    onClick: () => {
+                        console.log('Foo');
+                    }
+                });
+                menu.addItem({
+                    parent: 'root',
+                    id: 'bar',
+                    name: '❤️ Bar',
+                    onClick: () => {
+                        console.log('Bar');
+                    }
+                });
+                menu.addSeparator();
+                menu.addItem({
+                    parent: 'root',
+                    id: 'exit',
+                    name: '🔚 Exit',
+                    onClick: () => {
+                        console.log('Exit');
+                    }
+                });
+                window.document.body.addEventListener('contextmenu', event => {
+                    event.preventDefault();
+                    menu.show(event.clientX, event.clientY);
+                });
+            };
+        </script>
+    </body>
+</html>

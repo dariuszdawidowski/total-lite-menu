@@ -37,7 +37,7 @@
 }
 
 .total-lite-menu .total-lite-menu-item:not(.inactive):hover {
-    background-color: var(--metaviz-color-cyan);
+    background-color: rgb(65, 192, 240);
     cursor: pointer;
 }
 
