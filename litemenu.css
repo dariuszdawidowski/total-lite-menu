@@ -1,0 +1,54 @@
+/* Total Lite Menu */
+
+.total-lite-menu {
+    position: absolute;
+    width: 200px;
+    font-size: 12px;
+    background-color: rgba(250, 255, 255, 0.8);
+    padding: 4px 0;
+    z-index: var(--z-menu);
+    border-radius: 4px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 8px rgba(0,0,0, 0.3);
+    text-align: left;
+}
+
+.total-lite-menu:hover {
+    cursor: default;
+}
+
+.total-lite-menu .total-lite-menu-item {
+    line-height: 1.8em;
+    padding: 0 1.5em;
+    display: flex;
+}
+
+.total-lite-menu .total-lite-menu-item i {
+    width: 16px;
+    text-align: center;
+    margin-top: 4px;
+    margin-right: 6px;
+    color: rgb(100, 100, 100);
+}
+
+.total-lite-menu .total-lite-menu-item.inactive {
+    color: rgba(0,0,0, 0.4);
+}
+
+.total-lite-menu .total-lite-menu-item:not(.inactive):hover {
+    background-color: var(--metaviz-color-cyan);
+    cursor: pointer;
+}
+
+.total-lite-menu .total-lite-menu-item .total-lite-arrow {
+    float: right;
+    font-size: 1.4em;
+    line-height: 0.9em;
+}
+
+.total-lite-menu hr {
+    margin: 5px !important;
+    width: calc(100% - 10px) !important;
+    max-width: calc(100% - 10px) !important;
+}
