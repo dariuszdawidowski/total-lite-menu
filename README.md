@@ -32,6 +32,7 @@ Note: This is browser-centric vanilla JavaScript library, npm is only used to mi
 # Load from CDN
 
 https://unpkg.com/total-lite-menu@latest/dist/total-lite-menu.js
+
 https://unpkg.com/total-lite-menu@latest/dist/total-lite-menu.css
 
 # Credits
