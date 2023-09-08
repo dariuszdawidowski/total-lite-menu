@@ -24,12 +24,24 @@
     display: flex;
 }
 
-.total-lite-menu .total-lite-menu-item i {
+/* Font Awesome Icon */
+
+.total-lite-menu .total-lite-menu-item i.fas {
     width: 16px;
     text-align: center;
     margin-top: 4px;
     margin-right: 6px;
     color: rgb(100, 100, 100);
+}
+
+/* Material Design Icon */
+
+.total-lite-menu .total-lite-menu-item span.mdi {
+    width: 16px;
+    text-align: center;
+    margin-right: 6px;
+    color: rgb(100, 100, 100);
+    font-size: 1.3em;
 }
 
 .total-lite-menu .total-lite-menu-item.inactive {
