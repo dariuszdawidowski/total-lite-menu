@@ -5,7 +5,7 @@ Total Lite Menu
 JavaScript/ES8 menu library. Simplest as possible.
 </p>
 <p align="center">
-v0.9.0
+v0.9.1
 </p>
 
 [![build](https://github.com/dariuszdawidowski/total-lite-menu/actions/workflows/build.yml/badge.svg)](https://github.com/dariuszdawidowski/total-lite-menu/actions/workflows/build.yml)
